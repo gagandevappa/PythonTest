@@ -45,4 +45,3 @@ print(f"if you add up  {height} and  {weight}: the total will be {total}.")
 
 #strings and Text
 
-

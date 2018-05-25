@@ -43,5 +43,5 @@ print(f"he is an {occupation}")
 total=height+weight
 print(f"if you add up  {height} and  {weight}: the total will be {total}.")
 
-#strings and Text
+
 

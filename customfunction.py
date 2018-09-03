@@ -16,9 +16,10 @@ def emp_sort(emp):
     return emp.age
 s_emp=sorted(emp_list, key=emp_sort, reverse=True)
 print(s_emp)
-
+#lamda function
 t_emp=sorted(emp_list, key=lambda e: e.age, reverse=True)
 print(t_emp)
 
+#attrgetter method
 u_emp=sorted(emp_list, key=attrgetter('name'), reverse=True)
 print(u_emp)

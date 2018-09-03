@@ -18,4 +18,9 @@ print(gesture)
 #fstrings
 ola=f'Hello {name}, {greeting}'
 print(ola)
+#concatinate string
+num_1='10'
+num_2='30'
+print(num_1+num_2)
 print(dir(name))
+

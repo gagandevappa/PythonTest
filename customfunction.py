@@ -18,7 +18,6 @@ s_emp=sorted(emp_list, key=emp_sort, reverse=True)
 print(s_emp)
 
 t_emp=sorted(emp_list, key=lambda e: e.age, reverse=True)
-t_emp=sorted(emp_list, key=lambda e: e.age, reverse=True)
 print(t_emp)
 
 u_emp=sorted(emp_list, key=attrgetter('name'), reverse=True)

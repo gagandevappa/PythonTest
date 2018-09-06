@@ -1,4 +1,9 @@
-##List
+##########################################################################################
+#                                                                                        #
+#           Lists                                                                        #
+#                                                                                        #
+##########################################################################################
+print('\n LISTS \n')
 mylist=['Adesh','Sindhu','Abhiman','Ashik','Krushik']
 print(mylist)
 print(len(mylist))
@@ -27,19 +32,30 @@ mylist.pop()
 mylist.sort()
 print(mylist)
 numlist=[12,4,67,23,15,27]
+print('The index of 67 is : ',numlist.index(67))
 numlist.sort()
 print(numlist)
 numlist.sort(reverse=True)
 print(numlist)
 sortList=sorted(mylist, reverse=True)
 print(sortList)
-
-##Tuples
+for index,name in enumerate(sortList, start=1):
+    print(index, name)
+join_string=' - '.join(sortList)
+print(join_string)
+name_list=join_string.split(' - ')
+print(name_list)
+##########################################################################################
+#                                                                                        #
+#           Tuples                                                                       #
+#                                                                                        #
+##########################################################################################
+print('\n TUPLES \n')
 mytuple = ('test',5,'hello',2,'main',4)
-print(mytuple)
+#for i in enumerate(mytuple,start=1):
+#    print(i)
 #revtuple=sorted(mytuple, reverse=True)
 #print(revtuple)
-
 #dictionary
 mydict = {'karnataka' : 'Bengaluru','Telengana':'Hydrabad','Andra-pradesh':'amaravathi','tamilnadu':'chennai','kerala':'thiruvanathapuram'}
 print(mydict)

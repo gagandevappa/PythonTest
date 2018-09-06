@@ -82,14 +82,28 @@ empty_set=set()
 print(empty_set)
 ##########################################################################################
 #                                                                                        #
-#           Dictionaries                                                                   #
+#           Dictionaries                                                                 #
 #                                                                                        #
 ##########################################################################################
 print('\n DICTIONARY \n')
-mydict = {'karnataka' : 'Bengaluru','Telengana':'Hydrabad','Andra-pradesh':'amaravathi','tamilnadu':'chennai','kerala':'thiruvanathapuram'}
+mydict = {'karnataka' : 'Bengaluru','Telengana':'Hydrabad','Andra-pradesh':['hydrabad','amaravathi'],'tamilnadu':'chennai','kerala':'thiruvanathapuram'}
 print(mydict)
+print(mydict['Andra-pradesh'])
 dictkey = mydict.keys()
-print(dictkey)
-print(mydict.values())
+print('\ndictionary keys are: ',dictkey)
+print('\ndictionary values are: ',mydict.values())
+print('\ndictionary itmes are: ',mydict.items())
 revdict=sorted(mydict)
-print(revdict)
+print('sorted dict: ',revdict)
+for keys,values in mydict.items():
+    print(keys,values)
+mydict['maharastra']='Mumbai'
+print('The updated list-1 is: ',mydict)
+mydict.update({'Telengana':'Manam Hydrabad'})
+print(mydict.items())
+pop_dict=mydict.pop('Telengana')
+print('The popped dict item is:',pop_dict)
+del mydict['tamilnadu']
+print('The remaining dictinory is: ',mydict.items())
+empty_dict={}
+print('empty dict is: ',empty_dict)

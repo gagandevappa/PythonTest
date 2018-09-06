@@ -45,6 +45,10 @@ join_string=' - '.join(sortList)
 print(join_string)
 name_list=join_string.split(' - ')
 print(name_list)
+empty_list=[]
+empty_list2=list()
+print(empty_list)
+print(empty_list2)
 ##########################################################################################
 #                                                                                        #
 #           Tuples                                                                       #
@@ -52,11 +56,36 @@ print(name_list)
 ##########################################################################################
 print('\n TUPLES \n')
 mytuple = ('test',5,'hello',2,'main',4)
-#for i in enumerate(mytuple,start=1):
-#    print(i)
-#revtuple=sorted(mytuple, reverse=True)
-#print(revtuple)
-#dictionary
+tuple2=mytuple;
+print(mytuple)
+print(tuple2)
+#mytuple[0]='Gagan'
+#print(mytuple)
+empty_tuple=()
+empty_tuple2=tuple()
+print(empty_tuple)
+print(empty_tuple2)
+##########################################################################################
+#                                                                                        #
+#           Sets                                                                         #
+#                                                                                        #
+##########################################################################################
+print('\n SETS \n')
+cs_courses={'ds','dbms','python','unix','dbms'}
+mech_courses={'fme','atd','btd','som'}
+comman_courses={'unix','dbms','maths','physics'}
+print(cs_courses)
+print(mech_courses)
+print(cs_courses.intersection(comman_courses))
+print(cs_courses.union(comman_courses))
+empty_set=set()
+print(empty_set)
+##########################################################################################
+#                                                                                        #
+#           Dictionaries                                                                   #
+#                                                                                        #
+##########################################################################################
+print('\n DICTIONARY \n')
 mydict = {'karnataka' : 'Bengaluru','Telengana':'Hydrabad','Andra-pradesh':'amaravathi','tamilnadu':'chennai','kerala':'thiruvanathapuram'}
 print(mydict)
 dictkey = mydict.keys()

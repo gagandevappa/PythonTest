@@ -1,5 +1,5 @@
 from fabric.api import *
-env.hosts = ['172.20.29.230']
+env.hosts = ['172.20.29.220']
 env.user = 'node'
 env.key_filename = r'C:\Users\devapga\.ssh\VM-230.ppk'
 

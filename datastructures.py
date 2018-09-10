@@ -56,7 +56,7 @@ print(empty_list2)
 ##########################################################################################
 print('\n TUPLES \n')
 mytuple = ('test',5,'hello',2,'main',4)
-tuple2=mytuple;
+tuple2=mytuple
 print(mytuple)
 print(tuple2)
 #mytuple[0]='Gagan'
@@ -92,7 +92,7 @@ print(mydict['Andra-pradesh'])
 dictkey = mydict.keys()
 print('\ndictionary keys are: ',dictkey)
 print('\ndictionary values are: ',mydict.values())
-print('\ndictionary itmes are: ',mydict.items())
+print('\ndictionary items are: ',mydict.items())
 revdict=sorted(mydict)
 print('sorted dict: ',revdict)
 for keys,values in mydict.items():

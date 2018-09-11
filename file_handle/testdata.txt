@@ -1,0 +1,10 @@
+1. Hello Gagan!!
+2. Welcome to python
+3. are you enjoying it?
+4. There are 4 catagories in this learning
+5. Basics, Object oriented concepts, Flask , Django
+6. The concepts may the basics, but are building block to learn python
+7. practise the concepts with more examples
+8. There can be multiple ways to solve a problem
+9. understand the concepts and its internals like storage are retrival
+10. Hope so these examples are helpful

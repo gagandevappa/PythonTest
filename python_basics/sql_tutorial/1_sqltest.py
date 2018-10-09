@@ -1,50 +1,48 @@
 import sqlite3
 from employee import Employee
-
 conn = sqlite3.connect(':memory:')
-
-c = conn.cursor()
-
-c.execute("""CREATE TABLE employees (
-            first text,
-            last text,
-            pay integer
-            )""")
-
+c=conn.cursor()
+c.execute("""CREATE TABLE employee(
+                  first text,
+                  last text,
+                  pay integer)""")
 
 def insert_emp(emp):
-    with conn:
-        c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first, 'last': emp.last, 'pay': emp.pay})
-
+      with conn:
+        c.execute("INSERT INTO employee VALUES(:first, :last, :pay)", {'first':emp.first,'last':emp.last,'pay':emp.pay})
 
 def get_emps_by_name(lastname):
-    c.execute("SELECT * FROM employees WHERE last=:last", {'last': lastname})
-    return c.fetchall()
-
+      c.execute("SELECT * FROM employee WHERE last=:last", {'last':lastname})
+      return c.fetchall()
 
 def update_pay(emp, pay):
-    with conn:
-        c.execute("""UPDATE employees SET pay = :pay
-                    WHERE first = :first AND last = :last""",
-                  {'first': emp.first, 'last': emp.last, 'pay': pay})
-
+      c.execute("""UPDATE employee SET pay=:pay where first=:first 
+                AND last=:last""", {'pay':pay, 'first':emp.first, 'last':emp.last})
 
 def remove_emp(emp):
-    with conn:
-        c.execute("DELETE from employees WHERE first = :first AND last = :last",
-                  {'first': emp.first, 'last': emp.last})
+      c.execute("""DELETE FROM employee where 
+                  first=:first AND last=:last""", {'first':emp.first, 'last':emp.last})
 
-emp_1 = Employee('John', 'Doe', 80000)
-emp_2 = Employee('Jane', 'Doe', 90000)
+emp1=Employee('Gagan','Devappa',20000)
+emp2=Employee('Adesh','Devappa',30000)
+emp3=Employee('Abhiman','Ramesh',40000)
 
-insert_emp(emp_1)
-insert_emp(emp_2)
+insert_emp(emp1)
+insert_emp(emp2)
+insert_emp(emp3)
 
-emps = get_emps_by_name('Doe')
-print(emps)
+nameList=get_emps_by_name('Devappa')
+print("1.\n",nameList)
 
-update_pay(emp_2, 95000)
-remove_emp(emp_1)
+update_pay(emp2,50000)
 
-emps = get_emps_by_name('Doe')
-print(emps)
+nameList2=get_emps_by_name('Devappa')
+print("2.\n",nameList2)
+
+remove_emp(emp3)
+
+nameList3=get_emps_by_name('Ramesh')
+print("3.\n",nameList3)
+
+
+conn.close()

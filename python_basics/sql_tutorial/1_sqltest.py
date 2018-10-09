@@ -31,6 +31,8 @@ insert_emp(emp1)
 insert_emp(emp2)
 insert_emp(emp3)
 
+print("emp1 email: "+emp1.email)
+print("emp2 full name: "+emp2.fullname)
 nameList=get_emps_by_name('Devappa')
 print("1.\n",nameList)
 

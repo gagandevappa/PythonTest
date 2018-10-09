@@ -1,3 +1,13 @@
 {
-    "python.pythonPath": "C:\\DEVOPS\\New folder\\python.exe"
+    "python.pythonPath": "C:\\DEVOPS\\New folder\\python.exe",
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./python_basics",
+        "-p",
+        "test_*.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": true
 }

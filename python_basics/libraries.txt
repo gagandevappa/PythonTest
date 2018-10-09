@@ -1,0 +1,23 @@
+binutils-2.15.92.0.2
+compat-libstdc++-33-3.2.3
+compat-libstdc++-33-3.2.3 (32 bit)
+elfutils-libelf-0.97
+elfutils-libelf-devel-0.97
+expat-1.95.7
+gcc-3.4.6
+gcc-c++-3.4.6
+glibc-2.3.4-2.41
+glibc-2.3.4-2.41 (32 bit)
+glibc-common-2.3.4
+glibc-devel-2.3.4
+libaio-0.3.105
+libaio-0.3.105 (32 bit)
+libaio-devel-0.3.105
+libaio-devel-0.3.105 (32 bit)
+libgcc-3.4.6
+libgcc-3.4.6 (32-bit)
+libstdc++-3.4.6
+libstdc++-3.4.6 (32 bit)
+libstdc++-devel 3.4.6
+make-3.80
+sysstat-5.0.5
